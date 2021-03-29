@@ -1,21 +1,39 @@
-<div class="collapse" id="navbarToggleExternalContent">
-  <div class="bg-dark p-4">
-    <h5 class="text-white h4">Collapsed content</h5>
-    <span class="text-muted">Toggleable via the navbar brand.</span>
-  </div>
+<style>
+  .nav-box {
+    background-color: rgb(255, 0, 0);
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111111;
+  }
+</style>
+
+<div class="nav-box">
+  <a href="/"><img src="/images/ic_logo_w2.png" alt="" /></a>
+  <ul>
+    <li><a href="/">Login</a></li>
+    <li><a href="/blog">Note</a></li>
+    <li><a href="/note">Blog</a></li>
+    <li><a href="/login">Home</a></li>
+  </ul>
 </div>
-<nav class="navbar navbar-dark bg-dark">
-  <div class="container-fluid">
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarToggleExternalContent"
-      aria-controls="navbarToggleExternalContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-</nav>
