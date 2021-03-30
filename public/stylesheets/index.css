@@ -1,11 +1,21 @@
 .wrapper {
-    background-color: violet;
+    /* background-color: violet; */
     text-align: center;
     font-family: 'Sarabun', sans-serif;
 }
 
-.head-content {
+.intro {
+    height: 400px;
+    background-image: url('/images/bg/bg2.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
-.article-content {
+.intro-content {
+    color: white;
+    padding: 20px;
+}
+
+.article {
+
 }
