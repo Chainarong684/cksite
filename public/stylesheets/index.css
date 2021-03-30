@@ -1,12 +1,11 @@
 .wrapper {
+    background-color: violet;
     text-align: center;
     font-family: 'Sarabun', sans-serif;
 }
 
 .head-content {
-    background-color: violet;
 }
 
 .article-content {
-    background-color: tomato;
 }
