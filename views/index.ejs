@@ -15,6 +15,14 @@
       rel="stylesheet"
       href="/assets/fontawesome-free-5.15.3-web/js/all.js"
     />
+    <link
+      rel="stylesheet"
+      href="/assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css"
+    />
     <title><%= title %></title>
   </head>
 
@@ -25,15 +33,64 @@
         <div class="intro-content">
           <h1>Chainarong Kieatmingmongkol</h1>
           <h3>hello world</h3>
-          <h4>เพิ่มบทความ</h4>
+          <a href="/addBlog"><h4 class="btn btn-primary">เพิ่มบทความ</h4></a>
         </div>
       </div>
       <div class="article">
         <h1>คลังความรู้</h1>
         <hr />
+        <div class="owl-carousel owl-theme owl-loaded">
+          <div class="owl-stage-outer">
+            <div class="owl-stage">
+              <div class="owl-item">
+                <img src="/assets/images/bg/bg2.jpg" alt="" />
+              </div>
+              <div class="owl-item">
+                <img src="/assets/images/bg/bg2.jpg" alt="" />
+              </div>
+              <div class="owl-item">
+                <img src="/assets/images/bg/bg2.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-carousel"></div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis doloribus
+        consectetur quos rerum sed nostrum repellat cumque ratione dicta, natus
+        totam, provident dolor ullam amet. Minus repellendus deserunt voluptatem
+        quisquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
+        doloribus consectetur quos rerum sed nostrum repellat cumque ratione
+        dicta, natus totam, provident dolor ullam amet. Minus repellendus
+        deserunt voluptatem quisquam? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Quis doloribus consectetur quos rerum sed nostrum
+        repellat cumque ratione dicta, natus totam, provident dolor ullam amet.
+        Minus repellendus deserunt voluptatem quisquam? Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Quis doloribus consectetur quos
+        rerum sed nostrum repellat cumque ratione dicta, natus totam, provident
+        dolor ullam amet. Minus repellendus deserunt voluptatem quisquam? Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Quis doloribus
+        consectetur quos rerum sed nostrum repellat cumque ratione dicta, natus
+        totam, provident dolor ullam amet. Minus repellendus deserunt voluptatem
+        quisquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
+        doloribus consectetur quos rerum sed nostrum repellat cumque ratione
+        dicta, natus totam, provident dolor ullam amet. Minus repellendus
+        deserunt voluptatem quisquam?
       </div>
       <% include footer %>
     </div>
     <script src="/assets/bootstrap-5.0.0-beta3/dist/js/bootstrap.js"></script>
+    <script src="/assets/jquery.js"></script>
+    <script src="/assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script>
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 500,
+        autoplayHoverPause: true,
+      });
+    </script>
   </body>
 </html>
