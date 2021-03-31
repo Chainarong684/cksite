@@ -1,0 +1,20 @@
+body {
+    background-color: #fff;
+}
+
+.intro-background {
+    height: 600px;
+    background-image: url('/assets/images/bg/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.intro-content {
+    text-align: center;
+    color: white;
+    padding-top: 220px;
+}
+
+.article {
+    display: block;
+}
