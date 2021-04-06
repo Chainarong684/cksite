@@ -1,0 +1,67 @@
+<style>
+  .cookie-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #696562;
+    width: 60%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px auto;
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    transition: 500ms;
+  }
+
+  .cookie-box.active {
+    bottom: 10px;
+  }
+
+  .cookie-box img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cookie-box p {
+    margin: 0;
+  }
+
+  .cookie-box button {
+    margin-left: 50px;
+    width: 80px;
+    height: 40px;
+    background-color: #95defb;
+    border: 0;
+    border-radius: 5px;
+  }
+</style>
+
+<div class="cookie-box">
+  <img src="/assets/images/ic_cookie.png" alt="" />
+  <p>
+    ยินดีตอนรับเข้าสู่คลังความรู้ของข้าพเจ้ากรุณาอ่านนโยบายและยอมรับข้อตกลงได้
+    <a href="/privacy">ที่นี้</a>
+  </p>
+  <button class="cookie-btn">ตกลง</button>
+</div>
+
+<script>
+  const cookieBox = document.querySelector(".cookie-box");
+  const cookieBtn = document.querySelector(".cookie-btn");
+
+  cookieBtn.addEventListener("click", () => {
+    localStorage.setItem("cookieAgree", "Saved");
+    cookieBox.classList.remove("active");
+  });
+
+  setTimeout(() => {
+    if (!localStorage.getItem("cookieAgree")) {
+      cookieBox.classList.add("active");
+    }
+  }, 1500);
+</script>

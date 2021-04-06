@@ -5,7 +5,7 @@
       rel="stylesheet"
       href="/assets/bootstrap-5.0.0-beta3/dist/css/bootstrap.css"
     />
-    <link rel="stylesheet" href="/assets/stylesheets/index.css" />
+    <link rel="stylesheet" href="/assets/css/index.css" />
     <link
       rel="stylesheet"
       href="/assets/fontawesome-free-5.15.3-web/css/all.css"
@@ -63,32 +63,9 @@
       </div>
     </div>
 
-    <div class="cookie-box">
-      <img src="/assets/images/ic_cookie.png" alt="" />
-      <p>
-        ยินดีตอนรับเข้าสู่คลังความรู้ของข้าพเจ้ากรุณาอ่านนโยบายและยอมรับข้อตกลงได้
-        <a href="/privacy">ที่นี้</a>
-      </p>
-      <button class="cookie-btn">ตกลง</button>
-    </div>
-
+    <% include footer %> <% include cookie %>
     <script src="/assets/bootstrap-5.0.0-beta3/dist/js/bootstrap.js"></script>
     <script src="/assets/jquery.js"></script>
     <script src="/assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script>
-      const cookieBox = document.querySelector(".cookie-box");
-      const cookieBtn = document.querySelector(".cookie-btn");
-
-      cookieBtn.addEventListener("click", () => {
-        localStorage.setItem("cookieAgree", "Saved");
-        cookieBox.classList.remove("active");
-      });
-
-      setTimeout(() => {
-        if (!localStorage.getItem("cookieAgree")) {
-          cookieBox.classList.add("active");
-        }
-      }, 1500);
-    </script>
   </body>
 </html>
